@@ -8,9 +8,6 @@ console.log('***** Function Practice *****');
 function hello() {
   return 'Hello World!';
 }
-console.log(helloName("Jo"));     
-console.log(helloName("Stacy"));
-
 
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
@@ -20,15 +17,18 @@ console.log('Test - should say "Hello World!"', hello());
 function helloName(name) {
   return "Hello, " + name + "!";
 }
+console.log(helloName("Jo"));     
+console.log(helloName("Stacy"));
 
 // Remember to call the function to test
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber,secondNumber) {
   // return firstNumber + secondNumber;
   return firstNumber + secondNumber;
 }
+console.log(addNumbers(2, 3));
 // 4. Function to multiply three numbers & return the result
 function multiplyThree() {
 
