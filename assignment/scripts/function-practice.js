@@ -29,12 +29,13 @@ function addNumbers(firstNumber,secondNumber) {
   return firstNumber + secondNumber;
 }
 console.log(addNumbers(2, 3));
+
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
-}
-
-
+function multiplyThree(x, y, z) {
+  return x * y * z;
+  }
+  console.log(multiplyThree(2,3,4));
+  
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
