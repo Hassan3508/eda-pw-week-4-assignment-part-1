@@ -120,17 +120,16 @@ console.log(sumAll(numbers));
 //     return an empty array. Note: The input array should not change.
 function allPositive(array) {
   let positiveArray = [];
-  for (let i =0;i<array.length;i++);{
-    if (array[i] > 0){
-  positiveArray.push(array[i]);
-    }
-  }
-   return positiveArray;
+for (let i = 0; i < array.length; i++) {
+if (array[i] > 0) {
+positiveArray.push(array[i]);
 }
- 
-let Numbers= [1,-2,3,0,-4,5];
-console.log(allPositive(Numbers));
+}
+return positiveArray;
+}
 
+let Numbers = [1, -2, 3, 0, -4, 5];
+console.log(allPositive(Numbers));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
