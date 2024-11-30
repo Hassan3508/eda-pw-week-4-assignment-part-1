@@ -66,9 +66,23 @@ console.log(getLast([]));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
+   function find(value,array) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] === value) {
+          return true; 
+      }
+  }
+  return false; 
+}
+
+const fruits = ['apple', 'banana', 'cherry'];
+console.log(find('banana', fruits)); 
+console.log(find('grape', fruits)); 
+
+   
+
+
   
-} 
 
 // ----------------------
 // Stretch Goals
@@ -76,24 +90,47 @@ function find(value, array) {
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-  
+  return string.charAt(0)===letter;
 }
+console.log(isFirstLetter('A','Apple'));
+console.log(isFirstLetter('a','apple'));
+console.log(isFirstLetter('Z','Zebra'));
+console.log(isFirstLetter('z','zebra'));
+
+
 
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum;
+}
+let numbers =[1,2,3,4,5];
+console.log(sumAll(numbers));
   // TODO: loop to add items
 
   // TODO: return the sum
-}
+
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
-
+function allPositive(array) {
+  let positiveArray = [];
+  for (let i =0;i<array.length;i++);{
+    if (array[i] > 0){
+  positiveArray.push(array[i]);
+    }
+  }
+   return positiveArray;
 }
+ 
+let Numbers= [1,-2,3,0,-4,5];
+console.log(allPositive(Numbers));
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
