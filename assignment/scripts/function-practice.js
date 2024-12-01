@@ -95,7 +95,7 @@ function isFirstLetter(letter, string) {
 console.log(isFirstLetter('A','Apple'));
 console.log(isFirstLetter('a','apple'));
 console.log(isFirstLetter('Z','Zebra'));
-console.log(isFirstLetter('z','zebra'));
+console.log(isFirstLetter('b','zebra'));
 
 
 
